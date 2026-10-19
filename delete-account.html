@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="QQKOBEのアカウント削除方法と、関連データの取り扱いについて説明します。">
+  <meta name="description" content="QQKOBEのアカウント削除申請方法と、関連データの取り扱いについて説明します。">
   <title>アカウント削除について｜QQKOBE</title>
 
   <style>
@@ -59,8 +59,34 @@
       font-size: 14px;
     }
 
+    .contact-box {
+      background: white;
+      border: 1px solid #d8e0e1;
+      border-radius: 8px;
+      padding: 18px;
+      overflow-wrap: anywhere;
+    }
+
+    .contact-button {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 10px 18px;
+      border-radius: 6px;
+      background: #286b78;
+      color: white;
+      text-decoration: none;
+    }
+
+    .contact-button:hover {
+      background: #1e535d;
+    }
+
     a {
       color: #245e70;
+    }
+
+    .contact-button {
+      color: white;
     }
 
     .back-link {
@@ -98,73 +124,82 @@
   <main>
     <p>
       QQKOBEをご利用いただきありがとうございます。
-      こちらのページでは、アカウント削除の手続きについてご案内します。
+      このページでは、アカウント削除の申請方法と、
+      削除に関する注意事項をご案内します。
     </p>
 
     <section>
       <h2>1. 削除の申請方法</h2>
       <p>
         QQKOBEのアカウント削除を希望される場合は、
-        以下のお問い合わせ先から削除を申請してください。
-      </p>
-      <p class="notice">
-        現在、アカウント削除機能の実装を進めています。
-        申請方法と受付開始時期は、実際に申請を受け付けられる状態に
-        整えてから公開してください。
+        以下のメールアドレスまでご連絡ください。
       </p>
 
-      <!-- 実際に利用できる問い合わせ先を設定してから公開する -->
-      <p>
-        アカウント削除に関するお問い合わせ：
-        <a href="./support.html">お問い合わせページ</a>
-      </p>
-    </section>
+      <div class="contact-box">
+        <strong>アカウント削除申請・お問い合わせ先</strong>
+        <p>
+          <a href="mailto:qqkobe.support@gmail.com?subject=QQKOBE%20%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E5%89%8A%E9%99%A4%E7%94%B3%E8%AB%8B">
+            qqkobe.support@gmail.com
+          </a>
+        </p>
+        <a class="contact-button"
+           href="mailto:qqkobe.support@gmail.com?subject=QQKOBE%20%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E5%89%8A%E9%99%A4%E7%94%B3%E8%AB%8B">
+          メールで削除を申請する
+        </a>
+      </div>
 
-    <section>
-      <h2>2. 申請時に必要な情報</h2>
       <p>
-        申請者のアカウントを確認するため、
-        登録メールアドレスなどの情報を確認させていただく場合があります。
+        メールには、QQKOBEに登録したメールアドレスと、
+        アカウント削除を希望する旨を記載してください。
+        本人確認のため、追加の確認をお願いする場合があります。
         パスワードなどの認証情報は送信しないでください。
       </p>
-    </section>
 
-    <section>
-      <h2>3. 削除対象となる情報</h2>
-      <p>
-        アカウント削除時には、Firebase Authenticationに登録された
-        アカウント情報と、アカウントに関連付けられたデータを
-        削除する方針です。
-      </p>
-      <p>
-        投稿した防災設備の情報など、アカウントに関連するデータの
-        取り扱いについては、実際の削除処理の仕様に基づいて
-        対象と方法を明記します。
+      <p class="notice">
+        メールによる申請後、本人確認および削除処理を行います。
+        削除処理の実施前に、必要な確認を行う場合があります。
       </p>
     </section>
 
     <section>
-      <h2>4. 削除までの期間</h2>
+      <h2>2. 削除対象となる情報</h2>
       <p>
-        削除の受付方法、本人確認の方法、処理にかかる期間については、
-        実際の運用を決定したうえでご案内します。
-        申請後に処理状況や完了を確認できる方法も整備します。
+        QQKOBEでは、Firebase Authenticationのアカウント情報や、
+        データベースに保存されたアカウント関連情報などを取り扱っています。
+      </p>
+      <p>
+        削除申請を受け付けた後、アカウントに関連付けられた情報を確認し、
+        実際の仕様と運用に基づいて削除対象を判断します。
+        投稿した防災設備情報などの取り扱いは、
+        アカウント情報とは別に確認が必要な場合があります。
       </p>
     </section>
 
     <section>
-      <h2>5. 削除後の注意事項</h2>
+      <h2>3. 削除までの期間</h2>
       <p>
-        アカウントを削除すると、アカウントを利用した機能が
-        利用できなくなる予定です。
-        削除後に復元できるかどうかや、法令上などの理由で
-        保存が必要な情報の取り扱いについては、
-        実際の運用に合わせて明記します。
+        申請内容と本人確認の状況を確認したうえで、
+        削除処理を進めます。
+        対応にかかる期間については、申請受付時にご案内します。
       </p>
     </section>
 
     <section>
-      <h2>6. プライバシーポリシー</h2>
+      <h2>4. 削除後の注意事項</h2>
+      <p>
+        アカウントが削除されると、当該アカウントを利用した
+        QQKOBEの機能を利用できなくなります。
+        削除後のアカウントやデータは、復元できない場合があります。
+      </p>
+      <p>
+        法令上の義務や不正利用防止などの理由により、
+        一部の情報を一定期間保持する必要がある場合は、
+        適用されるルールに従って取り扱います。
+      </p>
+    </section>
+
+    <section>
+      <h2>5. プライバシーポリシー</h2>
       <p>
         個人情報の取り扱いについては、
         <a href="./privacy-policy.html">プライバシーポリシー</a>

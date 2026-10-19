@@ -1,11 +1,174 @@
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>ページのタイトル</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QQKOBE｜防災アプリ</title>
+  <meta name="description" content="QQKOBEは、避難所や防災設備などの位置を確認できる防災アプリです。">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Noto Sans JP", "Yu Gothic", sans-serif;
+      color: #333;
+      background: #f7f8f8;
+      line-height: 1.8;
+    }
+
+    header {
+      background: #286b78;
+      color: white;
+      padding: 30px 20px;
+    }
+
+    .header-inner {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 30px;
+      font-weight: 600;
+    }
+
+    header p {
+      margin: 6px 0 0;
+      font-size: 14px;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 35px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      margin-bottom: 28px;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #d8e0e1;
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    p {
+      margin: 0 0 12px;
+    }
+
+    .notice {
+      padding: 14px 16px;
+      background: #edf2f2;
+      border-left: 4px solid #286b78;
+      font-size: 14px;
+    }
+
+    .link-list {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    .link-list li {
+      border-bottom: 1px solid #e1e5e5;
+    }
+
+    .link-list a {
+      display: block;
+      padding: 12px 4px;
+      color: #245e70;
+      text-decoration: none;
+    }
+
+    .link-list a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      padding: 20px;
+      border-top: 1px solid #e1e5e5;
+      color: #666;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 24px 18px;
+      }
+
+      header h1 {
+        font-size: 26px;
+      }
+
+      main {
+        margin: 26px auto;
+        padding: 0 18px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <h1>こんにちは</h1>
-  <p>HTMLの書き出しテストです。！</p>
+  <header>
+    <div class="header-inner">
+      <h1>QQKOBE</h1>
+      <p>防災情報を確認するためのアプリ</p>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>QQKOBEについて</h2>
+      <p>
+        QQKOBEは、災害への備えや避難に役立つ情報を確認するためのアプリです。
+        避難所やAED、消火器などの場所を確認し、
+        日頃の防災対策に活用できます。
+      </p>
+      <p>
+        いざというときに備えて、普段から身近な避難場所や防災設備を
+        確認しておきましょう。
+      </p>
+    </section>
+
+    <section>
+      <h2>ご利用にあたって</h2>
+      <p class="notice">
+        投稿された情報は、内容や状況によって実際の設置場所と異なる場合があります。
+        AEDや消火器を利用する際は、現地の状況や最新の公式情報も確認してください。
+        緊急時は消防などの公的機関の案内に従ってください。
+      </p>
+    </section>
+
+    <section>
+      <h2>各種案内</h2>
+      <ul class="link-list">
+        <li>
+          <a href="./privacy-policy.html">プライバシーポリシー</a>
+        </li>
+        <li>
+          <a href="./delete-account.html">アカウント削除について</a>
+        </li>
+        <li>
+          <a href="./support.html">お問い合わせ</a>
+        </li>
+        <li>
+          <a href="./terms.html">利用規約</a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; QQKOBE</p>
+  </footer>
 </body>
 </html>

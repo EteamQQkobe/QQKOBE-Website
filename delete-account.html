@@ -1,115 +1,150 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="QQKOBEのアカウント削除申請方法と、関連データの取り扱いについて説明します。">
+  <meta name="theme-color" content="#286b78">
   <title>アカウント削除について｜QQKOBE</title>
 
   <style>
-    * {
-      box-sizing: border-box;
+    :root {
+      --teal: #286b78;
+      --teal-dark: #1e535e;
+      --ink: #253238;
+      --muted: #5d6a70;
+      --line: #dce5e7;
+      --surface: #f4f8f8;
+      --white: #fff;
     }
-
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
     body {
       margin: 0;
-      font-family: "Noto Sans JP", "Yu Gothic", sans-serif;
-      color: #333;
-      background: #f7f8f8;
-      line-height: 1.8;
-    }
-
-    header {
-      background: #286b78;
-      color: white;
-      padding: 24px 20px;
-    }
-
-    .header-inner,
-    main,
-    footer {
-      max-width: 800px;
-      margin: 0 auto;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 24px;
-    }
-
-    main {
-      padding: 32px 20px 48px;
-    }
-
-    section {
-      margin-bottom: 28px;
-    }
-
-    h2 {
-      font-size: 19px;
-      border-bottom: 1px solid #d8e0e1;
-      padding-bottom: 8px;
-    }
-
-    .notice {
-      background: #edf2f2;
-      border-left: 4px solid #286b78;
-      padding: 14px 16px;
-      font-size: 14px;
-    }
-
-    .contact-box {
-      background: white;
-      border: 1px solid #d8e0e1;
-      border-radius: 8px;
-      padding: 18px;
+      background: #f5f7f8;
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Noto Sans JP",
+        "Yu Gothic", Meiryo, sans-serif;
+      line-height: 1.85;
       overflow-wrap: anywhere;
     }
-
-    .contact-button {
-      display: inline-block;
-      margin-top: 8px;
-      padding: 10px 18px;
-      border-radius: 6px;
-      background: #286b78;
-      color: white;
+    header {
+      background: var(--teal);
+      color: var(--white);
+      padding: 24px 20px 30px;
+    }
+    .header-inner, main, footer {
+      width: min(900px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+    .back-nav {
+      margin-bottom: 16px;
+    }
+    .btn-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      background: rgba(255, 255, 255, 0.15);
+      color: var(--white);
       text-decoration: none;
+      font-size: 13px;
+      font-weight: 500;
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      transition: background 0.2s ease, transform 0.1s ease;
     }
-
-    .contact-button:hover {
-      background: #1e535d;
+    .btn-back:hover {
+      background: rgba(255, 255, 255, 0.25);
     }
-
-    a {
-      color: #245e70;
+    .btn-back:active {
+      transform: scale(0.97);
     }
-
-    .contact-button {
-      color: white;
+    .brand {
+      margin: 0 0 8px;
+      font-size: 14px;
+      letter-spacing: .08em;
+      opacity: .9;
     }
-
-    .back-link {
-      display: inline-block;
-      margin-top: 12px;
+    h1 {
+      margin: 0;
+      font-size: clamp(26px, 5vw, 36px);
+      line-height: 1.35;
     }
-
-    footer {
-      border-top: 1px solid #e1e5e5;
+    main {
+      margin-top: 28px;
+      margin-bottom: 40px;
+      padding: clamp(22px, 5vw, 42px);
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      box-shadow: 0 8px 26px rgba(30, 65, 72, .05);
+    }
+    h2 {
+      margin: 34px 0 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--line);
+      color: var(--teal-dark);
+      font-size: 20px;
+      line-height: 1.5;
+    }
+    h2:first-of-type { margin-top: 0; }
+    p { margin: 8px 0 12px; }
+    ul { padding-left: 1.5em; margin: 8px 0 14px; }
+    li { margin: 4px 0; }
+    a { color: var(--teal-dark); text-underline-offset: 3px; }
+    .notice {
+      padding: 14px 16px;
+      background: var(--surface);
+      border-left: 4px solid var(--teal);
+      border-radius: 6px;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+    .contact-box {
       padding: 20px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      margin: 16px 0;
+    }
+    .email {
+      font-size: 16px;
+      font-weight: bold;
+      margin: 8px 0 12px;
+    }
+    .btn-contact {
+      display: inline-block;
+      padding: 10px 18px;
+      background: var(--teal);
+      color: var(--white);
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 500;
+      transition: background 0.2s ease;
+    }
+    .btn-contact:hover {
+      background: var(--teal-dark);
+    }
+    footer {
+      padding: 0 0 30px;
+      color: var(--muted);
       text-align: center;
-      color: #666;
       font-size: 13px;
     }
-
-    @media (max-width: 600px) {
-      header {
-        padding: 20px 18px;
+    footer a { margin: 0 8px; }
+    @media (max-width: 560px) {
+      header { padding: 20px 0 25px; }
+      .header-inner, main, footer {
+        width: min(calc(100% - 24px), 900px);
       }
-
       main {
-        padding: 24px 18px 36px;
+        margin-top: 14px;
+        padding: 22px 18px;
+        border-radius: 12px;
       }
+      h2 { font-size: 18px; }
     }
   </style>
 </head>
@@ -117,6 +152,10 @@
 <body>
   <header>
     <div class="header-inner">
+      <div class="back-nav">
+        <a href="./index.html" class="btn-back">‹ トップページに戻る</a>
+      </div>
+      <p class="brand">QQKOBE｜開発チーム</p>
       <h1>アカウント削除について</h1>
     </div>
   </header>
@@ -124,94 +163,90 @@
   <main>
     <p>
       QQKOBEをご利用いただきありがとうございます。
-      このページでは、アカウント削除の申請方法と、
-      削除に関する注意事項をご案内します。
+      このページでは、アカウント削除の申請方法および関連データの取り扱いに関する注意事項をご案内します。
     </p>
 
     <section>
       <h2>1. 削除の申請方法</h2>
       <p>
-        QQKOBEのアカウント削除を希望される場合は、
-        以下のメールアドレスまでご連絡ください。
+        QQKOBEのアカウント削除を希望される場合は、本アプリ内の設定画面より手続きを行うか、以下のサポート窓口までメールにてご連絡ください。
       </p>
 
       <div class="contact-box">
         <strong>アカウント削除申請・お問い合わせ先</strong>
-        <p>
+        <p class="email">
           <a href="mailto:qqkobe.support@gmail.com?subject=QQKOBE%20%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E5%89%8A%E9%99%A4%E7%94%B3%E8%AB%8B">
             qqkobe.support@gmail.com
           </a>
         </p>
-        <a class="contact-button"
+        <a class="btn-contact"
            href="mailto:qqkobe.support@gmail.com?subject=QQKOBE%20%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E5%89%8A%E9%99%A4%E7%94%B3%E8%AB%8B">
           メールで削除を申請する
         </a>
       </div>
 
       <p>
-        メールには、QQKOBEに登録したメールアドレスと、
-        アカウント削除を希望する旨を記載してください。
-        本人確認のため、追加の確認をお願いする場合があります。
-        パスワードなどの認証情報は送信しないでください。
+        メールで申請される場合は、登録しているメールアドレスと「アカウント削除希望」の旨をご明記ください。ご本人確認のために追加の確認メールをお送りする場合がございます。なお、パスワード等の認証情報は送信しないでください。
       </p>
 
-      <p class="notice">
-        メールによる申請後、本人確認および削除処理を行います。
-        削除処理の実施前に、必要な確認を行う場合があります。
-      </p>
+      <div class="notice">
+        ご本人確認の完了後、速やかにアカウントおよび関連データの削除処理を実施いたします。
+      </div>
     </section>
 
     <section>
-      <h2>2. 削除対象となる情報</h2>
+      <h2>2. 削除対象となる情報と保持される情報</h2>
       <p>
-        QQKOBEでは、Firebase Authenticationのアカウント情報や、
-        データベースに保存されたアカウント関連情報などを取り扱っています。
+        アカウント削除時のデータ取り扱いは以下の通りとなります。
       </p>
+      <ul>
+        <li>
+          <strong>削除される情報：</strong>
+          ユーザーID、メールアドレス、ユーザー名などのアカウント情報、およびゲームの進行状況や所持データ等
+        </li>
+        <li>
+          <strong>保持される情報：</strong>
+          他の利用者に共有されているAED等の設備情報、投稿写真、および設備データに関連付けられたユーザーID（共有データの維持・管理のため継続保持されます）
+        </li>
+      </ul>
       <p>
-        削除申請を受け付けた後、アカウントに関連付けられた情報を確認し、
-        実際の仕様と運用に基づいて削除対象を判断します。
-        投稿した防災設備情報などの取り扱いは、
-        アカウント情報とは別に確認が必要な場合があります。
+        共有済みのAED投稿自体の削除をご希望の場合は、アカウント削除申請とは別にその旨をお申し出ください。
       </p>
     </section>
 
     <section>
       <h2>3. 削除までの期間</h2>
       <p>
-        申請内容と本人確認の状況を確認したうえで、
-        削除処理を進めます。
-        対応にかかる期間については、申請受付時にご案内します。
+        申請および本人確認が完了次第、原則として数営業日以内に削除処理を完了いたします。完了後はご連絡を差し上げます。
       </p>
     </section>
 
     <section>
       <h2>4. 削除後の注意事項</h2>
       <p>
-        アカウントが削除されると、当該アカウントを利用した
-        QQKOBEの機能を利用できなくなります。
-        削除後のアカウントやデータは、復元できない場合があります。
+        アカウントが削除されると、該当アカウントでのログインおよびゲーム機能等の利用ができなくなります。一度削除されたアカウントやゲーム進行データを復元することはできませんのでご注意ください。
       </p>
       <p>
-        法令上の義務や不正利用防止などの理由により、
-        一部の情報を一定期間保持する必要がある場合は、
-        適用されるルールに従って取り扱います。
+        なお、法令上の義務履行やセキュリティ対応、不正利用防止のために必要な一部の情報については、適切な管理のもと一定期間保持する場合があります。
       </p>
     </section>
 
     <section>
       <h2>5. プライバシーポリシー</h2>
       <p>
-        個人情報の取り扱いについては、
-        <a href="./privacy-policy.html">プライバシーポリシー</a>
-        をご確認ください。
+        個人情報の詳しい取り扱いにつきましては、<a href="./privacy-policy.html">プライバシーポリシー</a> をご確認ください。
       </p>
     </section>
-
-    <a class="back-link" href="./index.html">← トップページに戻る</a>
   </main>
 
   <footer>
-    <p>&copy; QQKOBE</p>
+    <p>© QQKOBE 開発チーム</p>
+    <p>
+      <a href="./index.html">トップページ</a> |
+      <a href="./privacy-policy.html">プライバシーポリシー</a> |
+      <a href="./support.html">お問い合わせ</a> |
+      <a href="./terms.html">利用規約</a>
+    </p>
   </footer>
 </body>
 </html>

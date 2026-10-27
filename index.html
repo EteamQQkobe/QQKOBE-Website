@@ -65,7 +65,7 @@
       box-shadow: 0 8px 26px rgba(30, 65, 72, .05);
     }
     section {
-      margin-bottom: 36px;
+      margin-bottom: 32px;
     }
     section:last-of-type {
       margin-bottom: 0;
@@ -89,42 +89,30 @@
       color: var(--ink);
     }
 
-    /* ナビゲーションリンクカード */
+    /* シンプルなリストリンク */
     .link-list {
       padding: 0;
-      margin: 16px 0 0;
+      margin: 0;
       list-style: none;
-      display: grid;
-      gap: 12px;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     }
     .link-list li {
-      margin: 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .link-list li:last-child {
+      border-bottom: none;
     }
     .link-list a {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 16px 18px;
-      background: var(--surface);
-      border: 1px solid var(--line);
-      border-radius: 10px;
+      display: block;
+      padding: 12px 4px;
       color: var(--teal-dark);
-      font-weight: 600;
+      font-weight: 500;
       text-decoration: none;
-      transition: all 0.2s ease;
+      transition: color 0.2s ease;
     }
     .link-list a:hover {
-      background: var(--teal);
-      color: var(--white);
-      border-color: var(--teal);
-      transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(40, 107, 120, 0.15);
-    }
-    .link-list a::after {
-      content: "›";
-      font-size: 18px;
-      font-weight: normal;
+      color: var(--teal);
+      text-decoration: underline;
+      text-underline-offset: 4px;
     }
 
     footer {
@@ -132,11 +120,6 @@
       color: var(--muted);
       text-align: center;
       font-size: 13px;
-    }
-    footer a {
-      color: var(--muted);
-      margin: 0 8px;
-      text-underline-offset: 3px;
     }
 
     @media (max-width: 560px) {
@@ -150,7 +133,6 @@
         border-radius: 12px;
       }
       h2 { font-size: 18px; }
-      .link-list { grid-template-columns: 1fr; }
     }
   </style>
 </head>

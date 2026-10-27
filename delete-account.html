@@ -4,147 +4,143 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="QQKOBEのアカウント削除申請方法と、関連データの取り扱いについて説明します。">
-  <meta name="theme-color" content="#286b78">
   <title>アカウント削除について｜QQKOBE</title>
 
   <style>
-    :root {
-      --teal: #286b78;
-      --teal-dark: #1e535e;
-      --ink: #253238;
-      --muted: #5d6a70;
-      --line: #dce5e7;
-      --surface: #f4f8f8;
-      --white: #fff;
+    * {
+      box-sizing: border-box;
     }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
+
     body {
       margin: 0;
-      background: #f5f7f8;
-      color: var(--ink);
-      font-family: -apple-system, BlinkMacSystemFont, "Noto Sans JP",
-        "Yu Gothic", Meiryo, sans-serif;
-      line-height: 1.85;
+      font-family: "Noto Sans JP", "Yu Gothic", sans-serif;
+      color: #333;
+      background: #f7f8f8;
+      line-height: 1.8;
       overflow-wrap: anywhere;
     }
+
     header {
-      background: var(--teal);
-      color: var(--white);
-      padding: 24px 20px 30px;
+      background: #286b78;
+      color: white;
+      padding: 24px 20px;
     }
-    .header-inner, main, footer {
-      width: min(900px, calc(100% - 32px));
+
+    .header-inner,
+    main,
+    footer {
+      max-width: 800px;
       margin: 0 auto;
     }
-    .back-nav {
-      margin-bottom: 16px;
-    }
-    .btn-back {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      padding: 6px 14px;
-      background: rgba(255, 255, 255, 0.15);
-      color: var(--white);
-      text-decoration: none;
-      font-size: 13px;
-      font-weight: 500;
-      border-radius: 20px;
-      border: 1px solid rgba(255, 255, 255, 0.3);
-      transition: background 0.2s ease, transform 0.1s ease;
-    }
-    .btn-back:hover {
-      background: rgba(255, 255, 255, 0.25);
-    }
-    .btn-back:active {
-      transform: scale(0.97);
-    }
-    .brand {
-      margin: 0 0 8px;
-      font-size: 14px;
-      letter-spacing: .08em;
-      opacity: .9;
-    }
-    h1 {
+
+    header h1 {
       margin: 0;
-      font-size: clamp(26px, 5vw, 36px);
-      line-height: 1.35;
+      font-size: 24px;
     }
+
     main {
-      margin-top: 28px;
-      margin-bottom: 40px;
-      padding: clamp(22px, 5vw, 42px);
-      background: var(--white);
-      border: 1px solid var(--line);
-      border-radius: 16px;
-      box-shadow: 0 8px 26px rgba(30, 65, 72, .05);
+      padding: 32px 20px 48px;
     }
+
+    section {
+      margin-bottom: 28px;
+    }
+
     h2 {
-      margin: 34px 0 12px;
+      font-size: 19px;
+      border-bottom: 1px solid #d8e0e1;
       padding-bottom: 8px;
-      border-bottom: 1px solid var(--line);
-      color: var(--teal-dark);
-      font-size: 20px;
-      line-height: 1.5;
+      margin-top: 32px;
+      margin-bottom: 12px;
     }
-    h2:first-of-type { margin-top: 0; }
-    p { margin: 8px 0 12px; }
-    ul { padding-left: 1.5em; margin: 8px 0 14px; }
-    li { margin: 4px 0; }
-    a { color: var(--teal-dark); text-underline-offset: 3px; }
-    .notice {
-      padding: 14px 16px;
-      background: var(--surface);
-      border-left: 4px solid var(--teal);
-      border-radius: 6px;
-      margin: 16px 0;
-      font-size: 14px;
+
+    h2:first-of-type {
+      margin-top: 0;
     }
-    .contact-box {
-      padding: 20px;
-      background: var(--surface);
-      border: 1px solid var(--line);
-      border-radius: 10px;
-      margin: 16px 0;
-    }
-    .email {
-      font-size: 16px;
-      font-weight: bold;
+
+    p {
       margin: 8px 0 12px;
     }
-    .btn-contact {
-      display: inline-block;
-      padding: 10px 18px;
-      background: var(--teal);
-      color: var(--white);
-      text-decoration: none;
-      border-radius: 6px;
+
+    ul {
+      padding-left: 1.5em;
+      margin: 8px 0 14px;
+    }
+
+    li {
+      margin: 4px 0;
+    }
+
+    .notice {
+      background: #edf2f2;
+      border-left: 4px solid #286b78;
+      padding: 14px 16px;
       font-size: 14px;
-      font-weight: 500;
-      transition: background 0.2s ease;
+      margin: 16px 0;
     }
-    .btn-contact:hover {
-      background: var(--teal-dark);
+
+    .contact-box {
+      background: white;
+      border: 1px solid #d8e0e1;
+      border-radius: 10px;
+      padding: 22px;
+      margin: 20px 0;
+      overflow-wrap: anywhere;
     }
+
+    .email {
+      font-size: 17px;
+      font-weight: bold;
+      margin: 12px 0;
+    }
+
+    .button {
+      display: inline-block;
+      background: #286b78;
+      color: white;
+      text-decoration: none;
+      padding: 11px 20px;
+      border-radius: 6px;
+      margin-top: 8px;
+    }
+
+    .button:hover {
+      background: #1e535d;
+    }
+
+    a {
+      color: #245e70;
+    }
+
+    .button {
+      color: white;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 12px;
+    }
+
     footer {
-      padding: 0 0 30px;
-      color: var(--muted);
+      border-top: 1px solid #e1e5e5;
+      padding: 20px;
       text-align: center;
+      color: #666;
       font-size: 13px;
     }
-    footer a { margin: 0 8px; }
-    @media (max-width: 560px) {
-      header { padding: 20px 0 25px; }
-      .header-inner, main, footer {
-        width: min(calc(100% - 24px), 900px);
+
+    @media (max-width: 600px) {
+      header {
+        padding: 20px 18px;
       }
+
       main {
-        margin-top: 14px;
-        padding: 22px 18px;
-        border-radius: 12px;
+        padding: 24px 18px 36px;
       }
-      h2 { font-size: 18px; }
+
+      .contact-box {
+        padding: 18px;
+      }
     }
   </style>
 </head>
@@ -152,10 +148,6 @@
 <body>
   <header>
     <div class="header-inner">
-      <div class="back-nav">
-        <a href="./index.html" class="btn-back">‹ トップページに戻る</a>
-      </div>
-      <p class="brand">QQKOBE｜開発チーム</p>
       <h1>アカウント削除について</h1>
     </div>
   </header>
@@ -179,7 +171,7 @@
             qqkobe.support@gmail.com
           </a>
         </p>
-        <a class="btn-contact"
+        <a class="button"
            href="mailto:qqkobe.support@gmail.com?subject=QQKOBE%20%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E5%89%8A%E9%99%A4%E7%94%B3%E8%AB%8B">
           メールで削除を申請する
         </a>
@@ -237,16 +229,12 @@
         個人情報の詳しい取り扱いにつきましては、<a href="./privacy-policy.html">プライバシーポリシー</a> をご確認ください。
       </p>
     </section>
+
+    <a class="back-link" href="./index.html">← トップページに戻る</a>
   </main>
 
   <footer>
-    <p>© QQKOBE 開発チーム</p>
-    <p>
-      <a href="./index.html">トップページ</a> |
-      <a href="./privacy-policy.html">プライバシーポリシー</a> |
-      <a href="./support.html">お問い合わせ</a> |
-      <a href="./terms.html">利用規約</a>
-    </p>
+    <p>&copy; QQKOBE</p>
   </footer>
 </body>
 </html>

@@ -4,169 +4,157 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="QQKOBEのプライバシーポリシーです。取得する情報、位置情報、設備投稿、アカウント削除について説明します。">
-  <meta name="theme-color" content="#286b78">
   <title>プライバシーポリシー｜QQKOBE</title>
+
   <style>
-    :root {
-      --teal: #286b78;
-      --teal-dark: #1e535e;
-      --ink: #253238;
-      --muted: #5d6a70;
-      --line: #dce5e7;
-      --surface: #f4f8f8;
-      --white: #fff;
+    * {
+      box-sizing: border-box;
     }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
+
     body {
       margin: 0;
-      background: #f5f7f8;
-      color: var(--ink);
-      font-family: -apple-system, BlinkMacSystemFont, "Noto Sans JP",
-        "Yu Gothic", Meiryo, sans-serif;
-      line-height: 1.85;
+      font-family: "Noto Sans JP", "Yu Gothic", sans-serif;
+      color: #333;
+      background: #f7f8f8;
+      line-height: 1.8;
       overflow-wrap: anywhere;
     }
+
     header {
-      background: var(--teal);
-      color: var(--white);
-      padding: 24px 20px 30px;
+      background: #286b78;
+      color: white;
+      padding: 24px 20px;
     }
-    .header-inner, main, footer {
-      width: min(900px, calc(100% - 32px));
+
+    .header-inner,
+    main,
+    footer {
+      max-width: 800px;
       margin: 0 auto;
     }
-    .back-nav {
-      margin-bottom: 16px;
-    }
-    .btn-back {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      padding: 6px 14px;
-      background: rgba(255, 255, 255, 0.15);
-      color: var(--white);
-      text-decoration: none;
-      font-size: 13px;
-      font-weight: 500;
-      border-radius: 20px;
-      border: 1px solid rgba(255, 255, 255, 0.3);
-      transition: background 0.2s ease, transform 0.1s ease;
-    }
-    .btn-back:hover {
-      background: rgba(255, 255, 255, 0.25);
-    }
-    .btn-back:active {
-      transform: scale(0.97);
-    }
-    .brand {
-      margin: 0 0 8px;
-      font-size: 14px;
-      letter-spacing: .08em;
-      opacity: .9;
-    }
-    h1 {
+
+    header h1 {
       margin: 0;
-      font-size: clamp(26px, 5vw, 36px);
-      line-height: 1.35;
+      font-size: 24px;
     }
-    .lead {
-      margin: 14px 0 0;
-      max-width: 720px;
-      color: #edf7f8;
-    }
+
     main {
-      margin-top: 28px;
-      margin-bottom: 40px;
-      padding: clamp(22px, 5vw, 42px);
-      background: var(--white);
-      border: 1px solid var(--line);
-      border-radius: 16px;
-      box-shadow: 0 8px 26px rgba(30, 65, 72, .05);
+      padding: 32px 20px 48px;
     }
-    .updated {
-      margin: 0 0 28px;
-      color: var(--muted);
-      font-size: 13px;
+
+    section {
+      margin-bottom: 28px;
     }
+
     h2 {
-      margin: 34px 0 12px;
+      font-size: 19px;
+      border-bottom: 1px solid #d8e0e1;
       padding-bottom: 8px;
-      border-bottom: 1px solid var(--line);
-      color: var(--teal-dark);
-      font-size: 20px;
-      line-height: 1.5;
+      margin-top: 32px;
+      margin-bottom: 12px;
     }
-    h2:first-of-type { margin-top: 0; }
-    p { margin: 8px 0 12px; }
-    ul { padding-left: 1.5em; margin: 8px 0 14px; }
-    li { margin: 4px 0; }
-    a { color: var(--teal-dark); text-underline-offset: 3px; }
-    .note {
-      padding: 14px 16px;
-      background: var(--surface);
-      border-left: 4px solid var(--teal);
-      border-radius: 6px;
-      margin: 16px 0;
+
+    h2:first-of-type {
+      margin-top: 0;
     }
-    .contact-box {
-      padding: 20px;
-      background: var(--surface);
-      border: 1px solid var(--line);
-      border-radius: 10px;
-      margin-top: 16px;
-    }
-    .email {
-      font-size: 16px;
-      font-weight: bold;
+
+    p {
       margin: 8px 0 12px;
     }
-    .btn-contact {
-      display: inline-block;
-      padding: 10px 18px;
-      background: var(--teal);
-      color: var(--white);
-      text-decoration: none;
-      border-radius: 6px;
+
+    ul {
+      padding-left: 1.5em;
+      margin: 8px 0 14px;
+    }
+
+    li {
+      margin: 4px 0;
+    }
+
+    .notice {
+      background: #edf2f2;
+      border-left: 4px solid #286b78;
+      padding: 14px 16px;
       font-size: 14px;
-      font-weight: 500;
-      transition: background 0.2s ease;
+      margin: 16px 0;
     }
-    .btn-contact:hover {
-      background: var(--teal-dark);
+
+    .contact-box {
+      background: white;
+      border: 1px solid #d8e0e1;
+      border-radius: 10px;
+      padding: 22px;
+      margin: 20px 0;
+      overflow-wrap: anywhere;
     }
+
+    .email {
+      font-size: 17px;
+      font-weight: bold;
+      margin: 12px 0;
+    }
+
+    .button {
+      display: inline-block;
+      background: #286b78;
+      color: white;
+      text-decoration: none;
+      padding: 11px 20px;
+      border-radius: 6px;
+      margin-top: 8px;
+    }
+
+    .button:hover {
+      background: #1e535d;
+    }
+
+    a {
+      color: #245e70;
+    }
+
+    .button {
+      color: white;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 12px;
+    }
+
+    .updated {
+      color: #666;
+      font-size: 13px;
+      margin-bottom: 24px;
+    }
+
     footer {
-      padding: 0 0 30px;
-      color: var(--muted);
+      border-top: 1px solid #e1e5e5;
+      padding: 20px;
       text-align: center;
+      color: #666;
       font-size: 13px;
     }
-    footer a { margin: 0 8px; }
-    @media (max-width: 560px) {
-      header { padding: 20px 0 25px; }
-      .header-inner, main, footer {
-        width: min(calc(100% - 24px), 900px);
+
+    @media (max-width: 600px) {
+      header {
+        padding: 20px 18px;
       }
+
       main {
-        margin-top: 14px;
-        padding: 22px 18px;
-        border-radius: 12px;
+        padding: 24px 18px 36px;
       }
-      h2 { font-size: 18px; }
+
+      .contact-box {
+        padding: 18px;
+      }
     }
   </style>
 </head>
+
 <body>
   <header>
     <div class="header-inner">
-      <div class="back-nav">
-        <a href="./index.html" class="btn-back">‹ トップページに戻る</a>
-      </div>
-      <p class="brand">QQKOBE｜開発チーム</p>
       <h1>プライバシーポリシー</h1>
-      <p class="lead">
-        QQKOBEにおける個人情報および利用者に関する情報の取り扱いについて説明します。
-      </p>
     </div>
   </header>
 
@@ -182,193 +170,213 @@
       利用者に関する情報を本ポリシーに従って取り扱います。
     </p>
 
-    <h2>1. 取得する情報</h2>
-    <p>
-      運営者は、本アプリの提供にあたり、機能に応じて以下の情報を取得または保存します。
-    </p>
-    <ul>
-      <li>
-        <strong>アカウント情報：</strong>
-        ユーザーID、メールアドレス、ユーザー名など、アカウントの登録・管理に必要な情報
-      </li>
-      <li>
-        <strong>認証情報：</strong>
-        メールアドレス・パスワードまたはGoogleアカウントによる認証に必要な情報。パスワード等は認証サービスを通じて管理されます。
-      </li>
-      <li>
-        <strong>位置情報：</strong>
-        地図上で現在地を表示するために端末から取得する位置情報、および設備の登録時に保存される位置情報
-      </li>
-      <li>
-        <strong>投稿情報：</strong>
-        AED等の設備の種類、設置場所、説明文、写真、投稿に関連するユーザーIDなど
-      </li>
-      <li>
-        <strong>ゲーム情報：</strong>
-        ゲーム機能の提供に必要な進行状況等の情報、取得したキャラクター情報、所持キャラクター等の情報
-      </li>
-      <li>
-        <strong>お問い合わせ・通報情報：</strong>
-        お問い合わせや通報の内容、および対応に必要な情報
-      </li>
-    </ul>
-
-    <h2>2. 情報の利用目的</h2>
-    <p>取得した情報は、以下の目的で利用します。</p>
-    <ul>
-      <li>アカウントの登録、認証、ログインおよび管理</li>
-      <li>地図、現在地、避難所情報、災害情報の提供</li>
-      <li>AED等の設備情報の登録、表示、共有および管理</li>
-      <li>ゲーム機能の提供と進行状況の管理</li>
-      <li>お問い合わせや通報への対応</li>
-      <li>不適切な投稿や不正利用への対応</li>
-      <li>本アプリの維持、改善および不具合への対応</li>
-    </ul>
-
-    <h2>3. 位置情報の取り扱い</h2>
-    <p>
-      本アプリでは、地図上で現在地を表示したり、周辺の避難所等を確認したりするために、端末の位置情報を利用します。
-      位置情報の利用には、端末やOSでの権限許可が必要です。利用者は端末の設定から権限を変更できます。
-    </p>
-    <p>
-      現在地表示のために一時的に取得する位置情報と、利用者が設備（AED等）の設置場所として登録する位置情報は明確に区別して取り扱います。
-      現在地表示のための位置情報は、原則としてサーバーに保存・蓄積されることはありません。
-      一方、利用者が登録した設備の位置情報は、他の利用者が確認できるようにアプリ内で共有・表示され、サーバーに保存されます。
-    </p>
-    <p>
-      なお、設備登録時には、取得した位置情報から設置場所の住所を自動設定・補助するための住所変換処理（逆ジオコーディング）を利用する場合があります。
-    </p>
-
-    <h2>4. 設備情報・写真の共有および取り扱い</h2>
-    <p>
-      利用者が登録したAED等の設備情報は、他の利用者が確認できるよう、本アプリ内で共有・表示されます。
-      投稿には、設備の位置情報、説明文、写真等が含まれる場合があります。
-    </p>
-    <p>
-      投稿者のメールアドレスは、本アプリの他の利用者や第三者に公開・共有されることはありません。
-    </p>
-    <p>
-      写真を投稿する際は、人物の顔、氏名、住所、車両番号など、第三者のプライバシーに関わる情報が写り込まないようにしてください。
-    </p>
-    <p>
-      運営者は、通報内容等を確認し、不適切な投稿や第三者の権利を侵害するおそれのある投稿について、非公開化、削除その他必要な措置を行う場合があります。通報数だけで機械的に判断するとは限りません。
-    </p>
-
-    <h2>5. 消火器情報とAED情報の取り扱い</h2>
-    <p>
-      本アプリでは、データの保存先や共有範囲に応じて、消火器情報とAED情報を区別して取り扱います。
-    </p>
-    <ul>
-      <li>
-        <strong>消火器情報：</strong>
-        端末内（ローカル）にのみ保存される情報です。アプリ内の削除機能やアプリのアンインストールによって削除されます。なお、端末のバックアップ等複製が残る場合、ご利用の端末バックアップサービスの設定に従います。
-      </li>
-      <li>
-        <strong>AED情報：</strong>
-        他の利用者と共有するためにサーバーへ保存される設備情報です。共有情報の継続的な提供およびデータ管理のため、アカウント削除後も登録された設備情報、写真、および関連するユーザーIDは保持されます。
-      </li>
-    </ul>
-    <div class="note">
-      アカウントを削除しても、共有済みのAED情報・写真および関連するユーザーIDは自動的に削除されません。投稿の削除をご希望の場合、お問い合わせ窓口よりご連絡ください。ご本人確認のうえ、適切に対応いたします。
-    </div>
-
-    <h2>6. アカウントの削除</h2>
-    <p>
-      アカウントの削除を希望される場合は、本アプリ内の設定画面、または <a href="./delete-account.html">アカウント削除について</a> ページをご参照のうえご連絡ください。ご本人確認を行ったうえで、削除対象となる情報を確認し対応します。
-    </p>
-    <p>
-      削除対象となる情報には、アカウント情報や、アカウントに紐づくゲーム進行情報等が含まれます。ただし、共有済みのAED情報・写真および登録時のユーザーIDは、共有情報として保持します。
-    </p>
-    <p>
-      なお、法令上の義務履行やセキュリティ対応、不正利用防止のために必要な情報については、必要な範囲で一定期間保持する場合があります。削除の対象や保持される情報について不明な点がある場合は、お問い合わせください。
-    </p>
-
-    <h2>7. 利用する外部サービス</h2>
-    <p>
-      本アプリでは、以下の外部サービス等を利用します。各サービスにおける情報の取り扱いについては、各提供者のプライバシーポリシーもご確認ください。
-    </p>
-    <ul>
-      <li>
-        <strong>Firebase Authentication：</strong>
-        メールアドレス・パスワードまたはGoogleアカウントによる認証
-      </li>
-      <li>
-        <strong>Cloud Firestore：</strong>
-        アカウントに関する情報、共有する設備情報等のデータ管理
-      </li>
-      <li>
-        <strong>Firebase Storage：</strong>
-        設備写真等の画像データの保存
-      </li>
-      <li>
-        <strong>Google Maps Platform／Apple Maps：</strong>
-        地図の表示
-      </li>
-      <li>
-        <strong>国土地理院の地図タイル：</strong>
-        災害マップにおける土砂災害・洪水・津波等の情報表示
-      </li>
-      <li>
-        <strong>Expo Location：</strong>
-        端末の位置情報の取得や、位置情報からの住所取得
-      </li>
-    </ul>
-    <p>
-      これらのサービスでは、機能の提供に必要な範囲で情報が処理される場合があります。各サービスの仕様や設定に応じて、情報の取り扱いが異なります。
-    </p>
-
-    <h2>8. 第三者への提供</h2>
-    <p>
-      運営者は、法令に基づく場合等を除き、利用者の個人情報を本人の同意なく第三者に提供しません。ただし、本アプリの機能を提供するために必要な範囲で、外部サービス事業者が情報を取り扱う場合があります。
-    </p>
-    <p>
-      また、利用者が投稿した設備情報等は、本アプリの他の利用者に共有されます。投稿内容には、個人を特定できる情報を含めないようご注意ください。
-    </p>
-
-    <h2>9. 情報の保管と安全管理</h2>
-    <p>
-      運営者は、個人情報および取得した情報への不正アクセス、漏洩、改ざん、紛失等を防止するため、利用するサービス等のセキュリティ機能や適切なアクセス制限を用いて、合理的な安全管理措置を講じます。データは利用目的に必要な期間に限り保管し、不要となった情報は法令上の義務や共有データの性質を考慮したうえで、速やかに削除または適切な匿名化処理を行います。
-    </p>
-    <p>
-      なお、インターネット通信や電子データの保存技術の性質上、完全な安全性を保証することはできません。利用者の皆様におかれましても、パスワード等のアカウント情報を適切に管理し、第三者に漏洩しないよう十分ご注意ください。
-    </p>
-
-    <h2>10. 未成年者の利用について</h2>
-    <p>
-      未成年者が本アプリを利用する場合は、あらかじめ親権者等の法定代理人（以下「保護者」といいます。）の同意を得たうえでご利用ください。未成年者が本アプリを利用した場合は、保護者の同意を得て利用しているものとみなします。
-    </p>
-    <p>
-      位置情報、設備情報、写真等の送信・投稿を行う際は、個人情報やプライバシーに関するリスクについて、あらかじめ保護者と一緒に確認したうえで操作を行ってください。
-    </p>
-
-    <h2>11. 本ポリシーの変更</h2>
-    <p>
-      運営者は、法令の改正や本アプリの機能変更等に応じて、本ポリシーを変更する場合があります。変更後の本ポリシーは、本ページに掲載した時点から効力が生じるものとします。なお、利用者に重大な影響を与える重要な変更を行う場合は、本アプリ内のお知らせ等を通じて事前に通知または周知するよう努めます。
-    </p>
-
-    <h2>12. お問い合わせ</h2>
-    <p>
-      本ポリシーに関するご質問、アカウント削除の手続き、投稿内容の削除依頼、不適切なコンテンツの通報等につきましては、<a href="./support.html">お問い合わせページ</a> または以下のサポート窓口までご連絡ください。
-    </p>
-    <div class="contact-box">
-      <strong>QQKOBE サポート窓口</strong>
-      <p class="email">
-        <a href="mailto:qqkobe.support@gmail.com">qqkobe.support@gmail.com</a>
+    <section>
+      <h2>1. 取得する情報</h2>
+      <p>
+        運営者は、本アプリの提供にあたり、機能に応じて以下の情報を取得または保存します。
       </p>
-      <a class="btn-contact" href="mailto:qqkobe.support@gmail.com?subject=QQKOBE%E3%81%AE%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B">
-        メールでお問い合わせ
-      </a>
-    </div>
+      <ul>
+        <li>
+          <strong>アカウント情報：</strong>
+          ユーザーID、メールアドレス、ユーザー名など、アカウントの登録・管理に必要な情報
+        </li>
+        <li>
+          <strong>認証情報：</strong>
+          メールアドレス・パスワードまたはGoogleアカウントによる認証に必要な情報。パスワード等は認証サービスを通じて管理されます。
+        </li>
+        <li>
+          <strong>位置情報：</strong>
+          地図上で現在地を表示するために端末から取得する位置情報、および設備の登録時に保存される位置情報
+        </li>
+        <li>
+          <strong>投稿情報：</strong>
+          AED等の設備の種類、設置場所、説明文、写真、投稿に関連するユーザーIDなど
+        </li>
+        <li>
+          <strong>ゲーム情報：</strong>
+          ゲーム機能の提供に必要な進行状況等の情報、取得したキャラクター情報、所持キャラクター等の情報
+        </li>
+        <li>
+          <strong>お問い合わせ・通報情報：</strong>
+          お問い合わせや通報の内容、および対応に必要な情報
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>2. 情報の利用目的</h2>
+      <p>取得した情報は、以下の目的で利用します。</p>
+      <ul>
+        <li>アカウントの登録、認証、ログインおよび管理</li>
+        <li>地図、現在地、避難所情報、災害情報の提供</li>
+        <li>AED等の設備情報の登録、表示、共有および管理</li>
+        <li>ゲーム機能の提供と進行状況の管理</li>
+        <li>お問い合わせや通報への対応</li>
+        <li>不適切な投稿や不正利用への対応</li>
+        <li>本アプリの維持、改善および不具合への対応</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. 位置情報の取り扱い</h2>
+      <p>
+        本アプリでは、地図上で現在地を表示したり、周辺の避難所等を確認したりするために、端末の位置情報を利用します。
+        位置情報の利用には、端末やOSでの権限許可が必要です。利用者は端末の設定から権限を変更できます。
+      </p>
+      <p>
+        現在地表示のために一時的に取得する位置情報と、利用者が設備（AED等）の設置場所として登録する位置情報は明確に区別して取り扱います。
+        現在地表示のための位置情報は、原則としてサーバーに保存・蓄積されることはありません。
+        一方、利用者が登録した設備の位置情報は、他の利用者が確認できるようにアプリ内で共有・表示され、サーバーに保存されます。
+      </p>
+      <p>
+        なお、設備登録時には、取得した位置情報から設置場所の住所を自動設定・補助するための住所変換処理（逆ジオコーディング）を利用する場合があります。
+      </p>
+    </section>
+
+    <section>
+      <h2>4. 設備情報・写真の共有および取り扱い</h2>
+      <p>
+        利用者が登録したAED等の設備情報は、他の利用者が確認できるよう、本アプリ内で共有・表示されます。
+        投稿には、設備の位置情報、説明文、写真等が含まれる場合があります。
+      </p>
+      <p>
+        投稿者のメールアドレスは、本アプリの他の利用者や第三者に公開・共有されることはありません。
+      </p>
+      <p>
+        写真を投稿する際は、人物の顔、氏名、住所、車両番号など、第三者のプライバシーに関わる情報が写り込まないようにしてください。
+      </p>
+      <p>
+        運営者は、通報内容等を確認し、不適切な投稿や第三者の権利を侵害するおそれのある投稿について、非公開化、削除その他必要な措置を行う場合があります。通報数だけで機械的に判断するとは限りません。
+      </p>
+    </section>
+
+    <section>
+      <h2>5. 消火器情報とAED情報の取り扱い</h2>
+      <p>
+        本アプリでは、データの保存先や共有範囲に応じて、消火器情報とAED情報を区別して取り扱います。
+      </p>
+      <ul>
+        <li>
+          <strong>消火器情報：</strong>
+          端末内（ローカル）にのみ保存される情報です。アプリ内の削除機能やアプリのアンインストールによって削除されます。なお、端末のバックアップ等複製が残る場合、ご利用の端末バックアップサービスの設定に従います。
+        </li>
+        <li>
+          <strong>AED情報：</strong>
+          他の利用者と共有するためにサーバーへ保存される設備情報です。共有情報の継続的な提供およびデータ管理のため、アカウント削除後も登録された設備情報、写真、および関連するユーザーIDは保持されます。
+        </li>
+      </ul>
+      <div class="notice">
+        アカウントを削除しても、共有済みのAED情報・写真および関連するユーザーIDは自動的に削除されません。投稿の削除をご希望の場合、お問い合わせ窓口よりご連絡ください。ご本人確認のうえ、適切に対応いたします。
+      </div>
+    </section>
+
+    <section>
+      <h2>6. アカウントの削除</h2>
+      <p>
+        アカウントの削除を希望される場合は、本アプリ内の設定画面、または <a href="./delete-account.html">アカウント削除について</a> ページをご参照のうえご連絡ください。ご本人確認を行ったうえで、削除対象となる情報を確認し対応します。
+      </p>
+      <p>
+        削除対象となる情報には、アカウント情報や、アカウントに紐づくゲーム進行情報等が含まれます。ただし、共有済みのAED情報・写真および登録時のユーザーIDは、共有情報として保持します。
+      </p>
+      <p>
+        なお、法令上の義務履行やセキュリティ対応、不正利用防止のために必要な情報については、必要な範囲で一定期間保持する場合があります。削除の対象や保持される情報について不明な点がある場合は、お問い合わせください。
+      </p>
+    </section>
+
+    <section>
+      <h2>7. 利用する外部サービス</h2>
+      <p>
+        本アプリでは、以下の外部サービス等を利用します。各サービスにおける情報の取り扱いについては、各提供者のプライバシーポリシーもご確認ください。
+      </p>
+      <ul>
+        <li>
+          <strong>Firebase Authentication：</strong>
+          メールアドレス・パスワードまたはGoogleアカウントによる認証
+        </li>
+        <li>
+          <strong>Cloud Firestore：</strong>
+          アカウントに関する情報、共有する設備情報等のデータ管理
+        </li>
+        <li>
+          <strong>Firebase Storage：</strong>
+          設備写真等の画像データの保存
+        </li>
+        <li>
+          <strong>Google Maps Platform／Apple Maps：</strong>
+          地図の表示
+        </li>
+        <li>
+          <strong>国土地理院の地図タイル：</strong>
+          災害マップにおける土砂災害・洪水・津波等の情報表示
+        </li>
+        <li>
+          <strong>Expo Location：</strong>
+          端末の位置情報の取得や、位置情報からの住所取得
+        </li>
+      </ul>
+      <p>
+        これらのサービスでは、機能の提供に必要な範囲で情報が処理される場合があります。各サービスの仕様や設定に応じて、情報の取り扱いが異なります。
+      </p>
+    </section>
+
+    <section>
+      <h2>8. 第三者への提供</h2>
+      <p>
+        運営者は、法令に基づく場合等を除き、利用者の個人情報を本人の同意なく第三者に提供しません。ただし、本アプリの機能を提供するために必要な範囲で、外部サービス事業者が情報を取り扱う場合があります。
+      </p>
+      <p>
+        また、利用者が投稿した設備情報等は、本アプリの他の利用者に共有されます。投稿内容には、個人を特定できる情報を含めないようご注意ください。
+      </p>
+    </section>
+
+    <section>
+      <h2>9. 情報の保管と安全管理</h2>
+      <p>
+        運営者は、個人情報および取得した情報への不正アクセス、漏洩、改ざん、紛失等を防止するため、利用するサービス等のセキュリティ機能や適切なアクセス制限を用いて、合理的な安全管理措置を講じます。データは利用目的に必要な期間に限り保管し、不要となった情報は法令上の義務や共有データの性質を考慮したうえで、速やかに削除または適切な匿名化処理を行います。
+      </p>
+      <p>
+        なお、インターネット通信や電子データの保存技術の性質上、完全な安全性を保証することはできません。利用者の皆様におかれましても、パスワード等のアカウント情報を適切に管理し、第三者に漏洩しないよう十分ご注意ください。
+      </p>
+    </section>
+
+    <section>
+      <h2>10. 未成年者の利用について</h2>
+      <p>
+        未成年者が本アプリを利用する場合は、あらかじめ親権者等の法定代理人（以下「保護者」といいます。）の同意を得たうえでご利用ください。未成年者が本アプリを利用した場合は、保護者の同意を得て利用しているものとみなします。
+      </p>
+      <p>
+        位置情報、設備情報、写真等の送信・投稿を行う際は、個人情報やプライバシーに関するリスクについて、あらかじめ保護者と一緒に確認したうえで操作を行ってください。
+      </p>
+    </section>
+
+    <section>
+      <h2>11. 本ポリシーの変更</h2>
+      <p>
+        運営者は、法令の改正や本アプリの機能変更等に応じて、本ポリシーを変更する場合があります。変更後の本ポリシーは、本ページに掲載した時点から効力が生じるものとします。なお、利用者に重大な影響を与える重要な変更を行う場合は、本アプリ内のお知らせ等を通じて事前に通知または周知するよう努めます。
+      </p>
+    </section>
+
+    <section>
+      <h2>12. お問い合わせ</h2>
+      <p>
+        本ポリシーに関するご質問、アカウント削除の手続き、投稿内容の削除依頼、不適切なコンテンツの通報等につきましては、<a href="./support.html">お問い合わせページ</a> または以下のサポート窓口までご連絡ください。
+      </p>
+      <div class="contact-box">
+        <strong>QQKOBE サポート窓口</strong>
+        <p class="email">
+          <a href="mailto:qqkobe.support@gmail.com">qqkobe.support@gmail.com</a>
+        </p>
+        <a class="button" href="mailto:qqkobe.support@gmail.com?subject=QQKOBE%E3%81%AE%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B">
+          メールでお問い合わせ
+        </a>
+      </div>
+    </section>
+
+    <a class="back-link" href="./index.html">← トップページに戻る</a>
   </main>
 
   <footer>
-    <p>© QQKOBE 開発チーム</p>
-    <p>
-      <a href="./index.html">トップページ</a> |
-      <a href="./delete-account.html">アカウント削除について</a> |
-      <a href="./support.html">お問い合わせ</a> |
-      <a href="./terms.html">利用規約</a>
-    </p>
+    <p>&copy; QQKOBE</p>
   </footer>
 </body>
 </html>
